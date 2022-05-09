@@ -1,0 +1,8 @@
+
+    {
+      "logs":[
+        {"email":"lina@gmail.com","mdp":"passeLina"},
+        {"email":"edgar@gmail.com","mdp":"passeEdgar"},
+        {"email":"jb@gmail.com","mdp":"x"}
+      ]
+    }

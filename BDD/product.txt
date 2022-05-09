@@ -1,0 +1,12 @@
+0µ18µ33µ../store/img_items/item1.jpgµRavenous Hydra
+1µ17µ33µ../store/img_items/item2.jpgµTitanic Hydra
+2µ18µ11µ../store/img_items/item3.jpgµBami's Cinder
+3µ15µ31µ../store/img_items/item4.jpgµBlack Cleaver
+4µ18µ25µ../store/img_items/item5.jpgµMorellonomicon
+5µ18µ5µ../store/img_items/item6.jpgµElixir of Iron
+6µ18µ13µ../store/img_items/item7.jpgµLost Chapter
+7µ18µ15µ../store/img_items/item8.jpgµRite of Ruin
+8µ18µ29µ../store/img_items/item9.jpgµDead Man's Plate
+9µ18µ18.5µ../store/img_items/item10.jpgµMartyr's Gambit
+10µ18µ8.5µ../store/img_items/item11.jpgµSwindler's Orb
+11µ18µ8.5µ../store/img_items/item12.jpgµOblivion Orb

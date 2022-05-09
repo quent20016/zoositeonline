@@ -1,0 +1,39 @@
+
+body{background-color: #0f4236;}
+
+#secpbody{
+    background-color: #0f4236;
+    margin: 0px;
+    padding: 0px;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+form{
+    background-color: #b8860b;
+    padding: 30px;
+    border-radius:30px ;
+}
+
+button{
+    top : 75%;
+    }
+    
+    footer{
+        position: absolute;
+        /* position:relative; */
+        bottom:0;
+        left:0;
+        right:0;
+        padding-top:2px;
+        height:30px;
+        background-color: #999;
+        width:100%;
+      }
+center{
+    background-color: #999;
+} 
