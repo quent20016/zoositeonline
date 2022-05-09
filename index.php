@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="icon" href="/projectsitezoo/images/favicon.ico" sizes="32x32">
+    <link rel="icon" href="../images/favicon.ico" sizes="32x32">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
    <script type="text/javascript" src="JS/function.js"></script> 
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="CSS/mainStyle.css" rel="stylesheet" type="text/css">
+    <link href="../CSS/mainStyle.css" rel="stylesheet" type="text/css">
     <title>Accueil</title>
 </head>
 
@@ -36,14 +36,14 @@
               <!-- <img id="logo" src="imgtests\logo.png" class="d-block w-100" alt="..."> -->
             </li>
             <li class="nav-item active">
-            <a class="nav-link" aria-current="page"  href="/projectsitezoo/index.php" style="color: aliceblue;">Home</a>
+            <a class="nav-link" aria-current="page"  href="../index.php" style="color: aliceblue;">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/projectsitezoo/Demo_Ani/demo.php" style="color: aliceblue;">Demonstrations and Animals</a>
+              <a class="nav-link" href="../Demo_Ani/demo.php" style="color: aliceblue;">Demonstrations and Animals</a>
             </li>
             <li class="nav-item">
               <?php if($_SESSION["sessionconnect"]!="null"){
-                  echo '<a class="nav-link" href="/projectsitezoo/hotel/hotel.php" style="color: aliceblue;">Hotel</a>';
+                  echo '<a class="nav-link" href="../hotel/hotel.php" style="color: aliceblue;">Hotel</a>';
                 }else{
                   echo '<a class="nav-link" href="#" style="color: aliceblue;">Hotel</a>';
                 }?>
@@ -52,7 +52,7 @@
             <li class="nav-item">
             <?php 
                 if($_SESSION["sessionconnect"]!="null"){
-                  echo '<a class="nav-link" href="/projectsitezoo/store/store.php" style="color: aliceblue;">Store</a>';
+                  echo '<a class="nav-link" href="../store/store.php" style="color: aliceblue;">Store</a>';
                 }else{
                   echo '<a class="nav-link" href="#" style="color: aliceblue;">Store</a>';
                 }
@@ -61,7 +61,7 @@
             <li class="nav-item">
               <?php 
                 if($_SESSION["sessionconnect"]!="null"){
-                  echo '<a class="nav-link" href="ticketform/formTicket.html" style="color: aliceblue;">Professionals - Ticket Manager</a>';
+                  echo '<a class="nav-link" href="../ticketform/formTicket.php" style="color: aliceblue;">Professionals - Ticket Manager</a>';
                 }else{
                   echo '<a class="nav-link" href="#" style="color: aliceblue;">Professionals - Ticket Manager</a>';
                 }
@@ -69,7 +69,7 @@
             </li>
             <li class="nav-item">
               <?php  if($_SESSION["sessionconnect"]=="null"){
-                 echo' <a class="nav-link" style="color:ghostwhite" href="login/inscription.php"> Register </a>';
+                 echo' <a class="nav-link" style="color:ghostwhite" href="../login/inscription.php"> Register </a>';
               }
               ?>
                 
@@ -80,9 +80,9 @@
                     echo "Connecté ";
                     echo $_SESSION["sessionconnect"];
                     echo '</a>';
-                    echo '<a class="nav-link" href="login/logout.php" style="color: aliceblue;">Logout</a>';
+                    echo '<a class="nav-link" href="../login/logout.php" style="color: aliceblue;">Logout</a>';
                 }else{
-                    echo '<a class="nav-link" href="login/authentification.php" style="color: aliceblue;">Login</a>';
+                    echo '<a class="nav-link" href="../login/authentification.php" style="color: aliceblue;">Login</a>';
                     $_SESSION["sessionconnect"]="null";
                 }
             ?>
@@ -105,14 +105,14 @@
 
       <div class="carousel-inner">
         <div class="carousel-item active" data-bs-interval="10000">
-          <img src="images\Caroussel\Gnar.png" class="d-block w-100" alt="...">
+          <img src="../images\Caroussel\Gnar.png" class="d-block w-100" alt="...">
           <div class="carousel-caption d-none d-md-block">
             <div id="container"class="mask position-relative" style="background-color: rgba(0, 0, 0, 0.6);">
               <div id="container" class="d-flex justify-content-center align-items-center h-100">
                 <div class="text-white">
                   <h1 class="mb-3" style="color:white">Zoo of the Rift</h1>
                   <h4 class="mb-3" style="color:white">Immerse yourself in the world of League of Legend</h4>
-                  <a class="btn btn-outline-light btn-lg" href="/projectsitezoo/hotel/hotel.php" role="button">Book now !</a>
+                  <a class="btn btn-outline-light btn-lg" href="../hotel/hotel.php" role="button">Book now !</a>
                   <h1 style="font-size: 25px;">_________</h1>
                 </div>
               </div>
@@ -124,7 +124,7 @@
         </div>
 
         <div class="carousel-item" data-bs-interval="2000">
-          <img src="images\Caroussel\Jungle.png" class="d-block w-100" alt="...">
+          <img src="../images/Caroussel/Jungle.png" class="d-block w-100" alt="...">
           <div id="container2" class="carousel-caption d-none d-md-block">
             <a style="color:white" href="#zone1"><h3 style="color:white">The River Area</h3></a>
             <p style="color:white" > In this zone, you will discover aquatic creatures as ferocious as they are incredible. </p>
@@ -132,7 +132,7 @@
           </div>
         </div>
         <div class="carousel-item">
-          <img src="images\Caroussel\Red.png" class="d-block w-100" alt="...">
+          <img src="../images/Caroussel/Red.png" class="d-block w-100" alt="...">
           <div id="container2" class="carousel-caption d-none d-md-block">
             <a style="color:white" href="#zone2"><h3 style="color:white">The Jungle Area</h3></a>
             <p style="color:white" > It is in this jungle that all the land animals of the park hide. </p>
@@ -140,7 +140,7 @@
           </div>
         </div>
         <div class="carousel-item">
-          <img src="images\Caroussel\Lanes.png" class="d-block w-100" alt="...">
+          <img src="../images/Caroussel/Lanes.png" class="d-block w-100" alt="...">
           <div id="container2" class="carousel-caption d-none d-md-block">
             <a style="color:white" href="#zone3"><h3 style="color:white"> 3 Lines </h3></a>
             <p style="color:white"> The park is criss-crossed by various paths and highways. </p>
@@ -171,7 +171,7 @@
     </style>
               <div>
                 <h3 style="color:white" id="zone0">Here you can find hotel in blue, stores and commercial area in red : </h3>
-                <img class="zoom" id = "map1" src="images/townMap1.GIF" alt="townMap1"  width="750" />
+                <img class="zoom" id = "map1" src="../images/townMap1.GIF" alt="townMap1"  width="750" />
                 <p style="color:white"> At both ends of our park, you will find two areas dedicated to entertainment: stores, souvenir stores, restaurants, attractions and more. </p>
                 <p style="color:white">To allow you to enjoy our zoo experience to the fullest it is even possible to stay in our many star hotels...</p>
                 <!-- <img src="images\map-HD.jpg" class="img-fluid" alt="Responsive image"> -->
@@ -180,21 +180,21 @@
               <div>
                 <h3 id="zone1">The River : </h3>
                   <!-- <img src="images\map-HD_zone_A.png" class="img-fluid" alt="Responsive image"> -->
-                  <img class="zoom" id = "map1" src="images/River.gif" alt="River"  width="750" />
+                  <img class="zoom" id = "map1" src="../images/River.gif" alt="River"  width="750" />
                   <p style="color:white">Marking a boundary between different biomes of the "jungle", the river is an area where various species live in freedom in harmony. </p>
                   <p style="color:white">It is possible to do various activities allowing you to get closer to our animals: canoeing, boat rides, swimming area...</p>
                 </div>
 
               <div>
                 <h3 id="zone2">The Jungle : </h3>
-                  <img class="zoom" src="images\Jungle.gif" class="img-fluid" alt="Jungle" width="750">
+                  <img class="zoom" src="../images\Jungle.gif" class="img-fluid" alt="Jungle" width="750">
                   <p style="color:white" class="mb-0">The heart of our park, the "jungle" is divided into 4 different biomes: hot, cold, tropical and desert climate.</p>
                   <p style="color:white"> You will find our different creatures that flourish in impressive enclosures. Wonderment awaits you...</p>
                 </div>
 
             <div>
               <h3 id="zone3">3 Lines : </h3>
-              <img class="zoom" src="images\Lanes.gif" class="img-fluid" alt="Lanes" width="750">
+              <img class="zoom" src="../images\Lanes.gif" class="img-fluid" alt="Lanes" width="750">
               <p style="color:white">On these three large lanes you will find fantastic walking trails, views of the plains below and a breath of fresh air like no other.</p>
               <p style="color:white"> A perfect place to rest, relax and enjoy the three gourmet restaurants at your disposal.</p>
             </div>
